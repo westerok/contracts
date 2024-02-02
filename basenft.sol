@@ -4,10 +4,10 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol
    construct("Advancev NFT", "ANFT") { 
     counter = 0;
     } 
-    function tokenURI (uint256 tokenId) public view override returns (string memory) {
+   function tokenURI (uint256 tokenId) public view override returns (string memory) {
      return tokenURIs [tokenId];
      }
-     function mint(string memory _tokenURI) public returns (uint256) {
+   function mint(string memory _tokenURI) public returns (uint256) {
      uint256 tokenId = cointer:; 
      safeMint(msg.sender, tokenId);
      tokenURIs[tokenId] = _tokenURI;
