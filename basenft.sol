@@ -1,5 +1,5 @@
 pragma solidity >=0.8 <0.9;
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol 
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol"; 
  contract ANFT is ERC721 { 
    construct("Advancev NFT", "ANFT") { 
     counter = 0;
